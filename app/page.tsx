@@ -1,112 +1,170 @@
 import Image from 'next/image'
+import AboutCards from './components/AboutCards'
+import ExpIcon from './components/svg/ExpIcon'
+import ProjectIcon from './components/svg/ProjectIcon'
+import SkillCard from './components/SkillCard'
+import HTMLIcon from './components/svg/HTMLIcon'
+import CSSIcon from './components/svg/CSSIcon'
+import JSIcon from './components/svg/JSIcon'
+import ProjectCard from './components/ProjectCard'
+import Link from 'next/link'
+import ServiceCard from './components/ServiceCard'
+import Testimonials from './components/sections/Testimonials'
+import WhatsappIcon from './components/svg/WhatsappIcon'
+import {BiLogoAws, BiLogoPhp, BiLogoReact} from "react-icons/bi";
+import {SiMysql,SiNextdotjs,SiLaravel} from "react-icons/si";
+import ContactForm from './components/form/ContactForm'
+import LinkedinIcon from './components/svg/LinkedinIcon'
+import EmailIcon from './components/svg/EmailIcon'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="home-container">
+      <div className="container home">
+        <div className="banner-container">
+          <div className="blur-container">
+
+          </div>
+          <div className="image-container">
+            <img src={"https://res.cloudinary.com/dxefwzl0v/image/upload/v1700123491/me/phenix_ql6qwo.jpg"} alt="image phoenix" />
+          </div>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="main">
+          <p className="text-sm">Hello , I'm</p>
+          <h1 className="name text-sm font-semibold"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
+          <p className="text-lg text-gray2">Software Developer, Cloud Engineer</p>
+        </div>
+        <div className="directions">
+          <button className="button active">Proyectos✨</button>
+          <button className="button">¿Quién soy?</button>
+          <button className="button">Servicios</button>
+        </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="about">
+          <div className="about-info">
+            <h2 className="subtitle">Sobre mi</h2>
+            <p className="about-text">I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.</p>
+            <p className="about-text">My mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.</p>
+            <p className="about-text">Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents, and achieving certification as an AWS Cloud Practitioner.</p>
+            <div className="about-cards">
+              <AboutCards content="3+ años" title="Experiencia">
+                <ExpIcon />
+              </AboutCards>
+              <AboutCards content="12+ completados" title="Proyectos">
+                <ProjectIcon />
+              </AboutCards>
+            </div>
+          </div>
+          <div className="about-image">
+            <img src={"https://res.cloudinary.com/dxefwzl0v/image/upload/v1700123491/me/profile_zuwikq.jpg"} alt="image me" />
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="skills">
+          <h1 className="subtitle">Experiencia</h1>
+          <div className="skills-list">
+            <div className="skills-card">
+              <h3 className="text-lg text-start text-orangeNormal">Web Developer</h3>
+              <div className="skills-card--content">
+                <SkillCard title="HTML5" children={<HTMLIcon />} />
+                <SkillCard title="CSS" children={<CSSIcon/>} />
+                <SkillCard title="Javascript" children={<JSIcon/>} />
+                <SkillCard title="React" children={<BiLogoReact/>} />
+                <SkillCard title="PHP" children={<BiLogoPhp/>} />
+                <SkillCard title="MySQL" children={<SiMysql/>} />
+                <SkillCard title="NextJS" children={<SiNextdotjs/>} />
+                <SkillCard title="Laravel" children={<SiLaravel/>} />
+              </div>
+            </div>
+            <div className="skills-card">
+              <h3 className="text-lg text-start text-orangeNormal">Cloud Engineer</h3>
+              <div className="skills-card--content">
+                <SkillCard title="AWS" children={ <BiLogoAws /> } />
+                <SkillCard title="Lambda Functions" children={
+                  <div className="w-4 h-4">
+                    <img src="https://www.fintail.me/icons/AWS-Lambda.png" width={16} height={16} alt="lambda" />
+                  </div>
+                } />
+                <SkillCard title="AWS RDS" children={
+                  <div  className="w-4 h-4">
+                    <img src="https://www.fintail.me/icons/Amazon-RDS.png" width={16} height={16} alt="AWS RDS" />
+                  </div>
+                } />
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <div className="projects">
+          <h1 className="subtitle">Mis Proyectos</h1>
+          <div className="projects-list">
+            <ProjectCard
+              content="lorem ipsum"
+              srcImage="https://d1l9597hydyb9x.cloudfront.net/cms_masuno/images/project/12/cover/12/12.png"
+              title="Ecommerce San Fernando"
+              url="http://benyaroot.com"
+            />
+            <ProjectCard
+              content="lorem ipsum"
+              srcImage="https://d1l9597hydyb9x.cloudfront.net/cms_masuno/images/project/12/cover/12/12.png"
+              title="Planificar gastos"
+              url="http://benyaroot.com"
+            />
+            <ProjectCard
+              content="lorem ipsum"
+              srcImage="https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62484c52eba34b77a562524d/screenshot_2022-04-02-13-15-14-0000.png"
+              title="CMS Admin"
+              url="http://benyaroot.com"
+            />
+          </div>
+          <Link href={"/projects"} className="text-orangeNormal">Ver más</Link>
+        </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="services">
+          <h1 className="subtitle">Servicios</h1>
+          <div className="services-list">
+            <ServiceCard
+            list={['Web designer','Integration API', 'Deploy web en cloud']}
+            title={'DESARROLLO WEB'}
+            />
+            <ServiceCard
+            list={['Migración de Base de datos','Implementar alta disponibilidad','Soluciones serverless']}
+            title={'Cloud Engineer'}
+            />
+          </div>
+        </div>
+
+        <div className="section-container">
+          <Testimonials/>
+        </div>
+        <div className="contact">
+          <h1 className="subtitle">Contactame</h1>
+          <div className="contact-container">
+            <div className="contact-options">
+              <article className="contact-card">
+                <EmailIcon/>
+                <h4>Email</h4>
+                <h5>b.ponce.chanca.21@gmail.com</h5>
+                <a href="b.ponce.chanca.21@gmail.com" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
+              </article>
+              <article className="contact-card">
+                <LinkedinIcon/>
+                <h4>LinkedIn</h4>
+                <h5>b-ponce-chanca</h5>
+                <a href="https://www.linkedin.com/in/b-ponce-chanca/" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
+              </article>
+              <article className="contact-card">
+                <WhatsappIcon/>
+                <h4>Whatsapp</h4>
+                <h5>+51 906383659</h5>
+                <a href="https://api.whatsapp.com/send?phone+51906383659" rel="noreferrer" target="_blank" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
+              </article>
+            </div>
+            <ContactForm/>
+          </div>
+        </div>
       </div>
     </main>
   )
