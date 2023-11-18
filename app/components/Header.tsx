@@ -7,6 +7,9 @@ const Header = () => {
     const handleActive = () => {
         setIsActive(!isActive);
     }
+    const overlayActive = () => {
+        if (isActive) setIsActive(false);
+    }
   return (
     <>    
     <div id="main-header" className={`main-header place-center ${isActive ? 'is-active' : ''}`}>
@@ -24,12 +27,12 @@ const Header = () => {
                         <a href="#specifications" className="link">Blog</a>
                     </li>
                 </ul>
-                <button id="menu-button" onClick={handleActive} className="menu-button"></button>
+                <button type='button' id="menu-button" onClick={handleActive} className="menu-button"></button>
                 {/*<a href="#" className="button tiny">Comprar</a>*/}
             </div>
         </nav>
     </div>
-    <div className="main-overlay" id="main-overlay"></div>
+    <div className="main-overlay" onClick={overlayActive}></div>
     </>
   )
 }

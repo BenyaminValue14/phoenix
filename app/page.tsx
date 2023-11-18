@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="main">
-          <p className="text-sm">Hello , I'm</p>
+          <p className="text-sm text-gray2 text-center">Hello , I'm</p>
           <h1 className="name text-sm font-semibold text-center"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
           <p className="text-lg text-gray2 text-center">Software Developer, Cloud Engineer</p>
         </div>

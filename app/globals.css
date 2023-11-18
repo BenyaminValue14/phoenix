@@ -350,7 +350,9 @@ button:focus-visible {
     padding: 2rem 0;
   }
 }
-
+.home-container {
+  width: 100%;
+}
 /*NAV*/
 .main-header {
   --z-sticky: 50;
@@ -358,7 +360,7 @@ button:focus-visible {
   position: sticky;
   top: 0;
   height: var(--header-height);
-  background-color:  #1d1d1f;
+  background-color:  #1a1a1a;
   z-index: var(--z-sticky);
 }
 
@@ -379,6 +381,7 @@ button:focus-visible {
   --smaller-body-size: 0.75rem;
   list-style: none;
   font-size: var(--smaller-body-size);
+  background-color: #1a1a1a;
 }
 
 .main-menu .link-nav {
@@ -426,6 +429,9 @@ button:focus-visible {
   .main-header .nav {
       /*max-width: calc(100% - 2rem);*/
       padding-inline: 1rem;
+      padding-top: 0.5rem;
+      margin: 0;
+      max-width: 100%;
   }
 
   .main-header .right {
