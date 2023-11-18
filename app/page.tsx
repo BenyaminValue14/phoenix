@@ -16,11 +16,14 @@ import {SiMysql,SiNextdotjs,SiLaravel} from "react-icons/si";
 import ContactForm from './components/form/ContactForm'
 import LinkedinIcon from './components/svg/LinkedinIcon'
 import EmailIcon from './components/svg/EmailIcon'
+import Header from './components/Header'
 
 
 export default function Home() {
   return (
+    <>
     <main className="home-container">
+    <Header/>
       <div className="container home">
         <div className="banner-container">
           <div className="blur-container">
@@ -33,8 +36,8 @@ export default function Home() {
 
         <div className="main">
           <p className="text-sm">Hello , I'm</p>
-          <h1 className="name text-sm font-semibold"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
-          <p className="text-lg text-gray2">Software Developer, Cloud Engineer</p>
+          <h1 className="name text-sm font-semibold text-center"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
+          <p className="text-lg text-gray2 text-center">Software Developer, Cloud Engineer</p>
         </div>
         <div className="directions">
           <button className="button active">Proyectos✨</button>
@@ -66,7 +69,7 @@ export default function Home() {
           <h1 className="subtitle">Experiencia</h1>
           <div className="skills-list">
             <div className="skills-card">
-              <h3 className="text-lg text-start text-orangeNormal">Web Developer</h3>
+              <h3 className="text-lg text-orangeNormal text-center">Web Developer</h3>
               <div className="skills-card--content">
                 <SkillCard title="HTML5" children={<HTMLIcon />} />
                 <SkillCard title="CSS" children={<CSSIcon/>} />
@@ -79,7 +82,7 @@ export default function Home() {
               </div>
             </div>
             <div className="skills-card">
-              <h3 className="text-lg text-start text-orangeNormal">Cloud Engineer</h3>
+              <h3 className="text-lg text-orangeNormal text-center">Cloud Engineer</h3>
               <div className="skills-card--content">
                 <SkillCard title="AWS" children={ <BiLogoAws /> } />
                 <SkillCard title="Lambda Functions" children={
@@ -167,5 +170,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   )
 }

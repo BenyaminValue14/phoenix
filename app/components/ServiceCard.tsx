@@ -10,7 +10,7 @@ const ServiceCard = ({title, list}: IProps) => {
   return (
     <article className="service">
       <div className="service-header">
-      <h2 className="text-sm font-bold">{title}</h2>
+      <h2 className="text-sm font-bold text-white text-center">{title}</h2>
       </div>
       <ul className="list">
         {
