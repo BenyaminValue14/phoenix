@@ -25,9 +25,9 @@ const data = [
   },
   {
     id:4,
-    avatar: 'https://i.pravatar.cc/300',
-    name:'Yiyi Magic',
-    review:'lorem aihf wie ewiofndv wlgnw brlwkn krlg nf vbñ',
+    avatar: 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1700325442/web-persol/el-doc-1_tznn7m.jpg',
+    name:'Luis Valdivia Humareda',
+    review:'I am currently collaborating with Benjamin on several projects and can attest to his exceptional skills in frontend development, specifically with Sass and JavaScript. He possesses a genuine passion for creating intricate effects and animations in his code. Additionally, he has a strong commitment to personal and professional growth, constantly seeking new ways to improve his skills and knowledge. Currently, he is expanding his expertise by learning cloud services, with the goal of applying them in his daily assignments',
   },
 ]
 const Testimonials = () => {
@@ -47,7 +47,7 @@ const Testimonials = () => {
                 <div className='avatar'>
                   <img src={avatar} alt='Avatar 1' />
                 </div>
-                  <h5 className='text-sm'>{name}</h5>
+                  <h5 className='text-sm text-white'>{name}</h5>
                   <small className='text-gray2'>
                    {review}
                   </small>

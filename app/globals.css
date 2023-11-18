@@ -219,7 +219,7 @@ button:focus-visible {
   @apply text-white text-lg text-start;
 }
 .project-text {
-  @apply text-xs font-light text-start;
+  @apply text-xs font-light text-start text-gray2;
 }
 
 .service {
@@ -629,7 +629,7 @@ button:focus-visible {
   @apply text-dimWhite2 flex;
   align-items: center;
   padding: 0 12px;
-  line-height: 64px;
+  line-height: 47px;
   font-size: 14px;
   font-weight: 500;
   transition: color .25s;
@@ -741,7 +741,8 @@ button:focus-visible {
 
 @media screen and (max-width: 1024px) {
   .main-header .nav {
-      max-width: calc(100% - 3rem);
+      /*max-width: calc(100% - 3rem);*/
+      max-width: 100%;
   }
 }
 
@@ -752,7 +753,8 @@ button:focus-visible {
   }
   
   .main-header .nav {
-      max-width: calc(100% - 2rem);
+      /*max-width: calc(100% - 2rem);*/
+      max-width: 100%;
   }
 
   .main-header .right {
