@@ -17,6 +17,8 @@ import ContactForm from './components/form/ContactForm'
 import LinkedinIcon from './components/svg/LinkedinIcon'
 import EmailIcon from './components/svg/EmailIcon'
 import Header from './components/Header'
+import LastProjects from './components/sections/LastProjects'
+import ContactMe from './components/sections/ContactMe'
 
 
 export default function Home() {
@@ -50,7 +52,7 @@ export default function Home() {
             <h2 className="subtitle">Sobre mi</h2>
             <p className="about-text">I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.</p>
             <p className="about-text">My mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.</p>
-            <p className="about-text">Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents, and achieving certification as an AWS Cloud Practitioner.</p>
+            <p className="about-text">Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents (America and Europa), and achieving certification as an AWS Cloud Practitioner.</p>
             <div className="about-cards">
               <AboutCards content="3+ años" title="Experiencia">
                 <ExpIcon />
@@ -66,7 +68,7 @@ export default function Home() {
         </div>
 
         <div className="skills">
-          <h1 className="subtitle">Experiencia</h1>
+          <h1 className="subtitle">Soft Skills</h1>
           <div className="skills-list">
             <div className="skills-card">
               <h3 className="text-lg text-orangeNormal text-center">Web Developer</h3>
@@ -100,37 +102,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="projects">
-          <h1 className="subtitle">Mis Proyectos</h1>
-          <div className="projects-list">
-            <ProjectCard
-              content="lorem ipsum"
-              srcImage="https://d1l9597hydyb9x.cloudfront.net/cms_masuno/images/project/12/cover/12/12.png"
-              title="Ecommerce San Fernando"
-              url="http://benyaroot.com"
-            />
-            <ProjectCard
-              content="lorem ipsum"
-              srcImage="https://d1l9597hydyb9x.cloudfront.net/cms_masuno/images/project/12/cover/12/12.png"
-              title="Planificar gastos"
-              url="http://benyaroot.com"
-            />
-            <ProjectCard
-              content="lorem ipsum"
-              srcImage="https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62484c52eba34b77a562524d/screenshot_2022-04-02-13-15-14-0000.png"
-              title="CMS Admin"
-              url="http://benyaroot.com"
-            />
-          </div>
-          <Link href={"/projects"} className="text-orangeNormal">Ver más</Link>
-        </div>
+        <LastProjects/>
 
         <div className="services">
           <h1 className="subtitle">Servicios</h1>
           <div className="services-list">
             <ServiceCard
             list={['Web designer','Integration API', 'Deploy web en cloud']}
-            title={'DESARROLLO WEB'}
+            title={'Web Development'}
             />
             <ServiceCard
             list={['Migración de Base de datos','Implementar alta disponibilidad','Soluciones serverless']}
@@ -142,32 +121,7 @@ export default function Home() {
         <div className="section-container">
           <Testimonials/>
         </div>
-        <div className="contact">
-          <h1 className="subtitle">Contactame</h1>
-          <div className="contact-container">
-            <div className="contact-options">
-              <article className="contact-card">
-                <EmailIcon/>
-                <h4>Email</h4>
-                <h5>b.ponce.chanca.21@gmail.com</h5>
-                <a href="b.ponce.chanca.21@gmail.com" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
-              </article>
-              <article className="contact-card">
-                <LinkedinIcon/>
-                <h4>LinkedIn</h4>
-                <h5>b-ponce-chanca</h5>
-                <a href="https://www.linkedin.com/in/b-ponce-chanca/" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
-              </article>
-              <article className="contact-card">
-                <WhatsappIcon/>
-                <h4>Whatsapp</h4>
-                <h5>+51 906383659</h5>
-                <a href="https://api.whatsapp.com/send?phone+51906383659" rel="noreferrer" target="_blank" className="text-orangeNormal hover:text-orangeLight">Send a message</a>
-              </article>
-            </div>
-            <ContactForm/>
-          </div>
-        </div>
+        <ContactMe/>
       </div>
     </main>
     </>
