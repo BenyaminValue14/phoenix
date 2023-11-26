@@ -296,9 +296,13 @@ button:focus-visible {
   margin: 0 auto 1rem;
   border: 0.4rem solid rgba(240, 91, 5, 0.6);
 }
-
+.skills-card--content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 .details {
-  @apply flex gap-2 text-gray2;
+  @apply flex gap-2 text-gray2 w-max md:w-[48%];
 }
 .testimonials, .services, .projects, .skills, .contact {
   margin-top: 4rem;
