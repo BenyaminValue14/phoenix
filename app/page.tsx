@@ -40,7 +40,7 @@ export default function Home() {
         <div className="main">
           <p className="text-sm text-gray2 text-center">Hello , I'm</p>
           <h1 className="name text-sm font-semibold text-center"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
-          <p className="text-lg text-gray2 text-center">Software Developer, Cloud Engineer</p>
+          <p className="text-lg text-gray2 text-center">Software Developer, Business Administrator & Data Analytics</p>
         </div>
         <div className="directions">
           <button className="button active">Proyectos✨</button>
@@ -81,7 +81,7 @@ export default function Home() {
             />
             <ServiceCard
             list={['Migración de Base de datos','Implementar alta disponibilidad','Soluciones serverless']}
-            title={'Cloud Engineer'}
+            title={'Data Analytics'}
             />
           </div>
         </div>

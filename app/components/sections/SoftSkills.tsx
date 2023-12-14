@@ -25,7 +25,7 @@ const SoftSkills = () => {
                     </div>
                 </div>
                 <div className="skills-card">
-                    <h3 className="text-lg text-orangeNormal text-center mb-3">Cloud Engineer</h3>
+                    <h3 className="text-lg text-orangeNormal text-center mb-3">Data Analytics</h3>
                     <div className="skills-card--content">
                         <SkillCard title="AWS" children={<BiLogoAws />} />
                         <SkillCard title="Lambda Functions" children={
