@@ -58,15 +58,15 @@ const Testimonials = () => {
           }
         </Swiper>
       </div>
-      <Blurhash
+      {/*<Blurhash
         hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
         width={400}
         height={300}
         resolutionX={32}
         resolutionY={32}
         punch={1}
-      />
-      <BlurhashCanvas hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={400} height={300} punch={1} />
+      />*/}
+      {/*<BlurhashCanvas hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" width={400} height={300} punch={1} />*/}
     </section>
   )
 }

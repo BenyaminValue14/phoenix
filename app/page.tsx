@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
     <main className="home-container">
-    <Header/>
+    
       <div className="container home">
         <div className="banner-container">
           <div className="blur-container">

@@ -45,8 +45,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: #1a1a1a;
@@ -393,7 +391,7 @@ button:focus-visible {
 }
 
 .main-menu .link-nav:hover {
-  color: var(--accent-color-alt);
+  @apply text-orangeNormal;
   text-decoration: none;
 }
 
@@ -719,7 +717,7 @@ button:focus-visible {
 }
 
 .main-menu .link:hover {
-  color: var(--accent-color-alt);
+  @apply text-orangeLight;
   text-decoration: none;
 }
 
