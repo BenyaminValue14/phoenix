@@ -331,6 +331,7 @@ button:focus-visible {
   border-width: 2px;
   border-style: solid;
   resize: none;
+  color: #ffffff;
 }
 .footer {
   @apply relative border-black;

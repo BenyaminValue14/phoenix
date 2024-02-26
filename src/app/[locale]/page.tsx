@@ -1,28 +1,20 @@
-import Image from 'next/image'
-import AboutCards from './components/AboutCards'
-import ExpIcon from './components/svg/ExpIcon'
-import ProjectIcon from './components/svg/ProjectIcon'
-import SkillCard from './components/SkillCard'
-import HTMLIcon from './components/svg/HTMLIcon'
-import CSSIcon from './components/svg/CSSIcon'
-import JSIcon from './components/svg/JSIcon'
-import ProjectCard from './components/ProjectCard'
-import Link from 'next/link'
-import ServiceCard from './components/ServiceCard'
-import Testimonials from './components/sections/Testimonials'
-import WhatsappIcon from './components/svg/WhatsappIcon'
-import {BiLogoAws, BiLogoPhp, BiLogoReact} from "react-icons/bi";
-import {SiMysql,SiNextdotjs,SiLaravel} from "react-icons/si";
-import ContactForm from './components/form/ContactForm'
-import LinkedinIcon from './components/svg/LinkedinIcon'
-import EmailIcon from './components/svg/EmailIcon'
-import Header from './components/Header'
-import LastProjects from './components/sections/LastProjects'
-import ContactMe from './components/sections/ContactMe'
-import SoftSkills from './components/sections/SoftSkills'
 
+import AboutCards from '../components/AboutCards'
+import ExpIcon from '../components/svg/ExpIcon'
+import ProjectIcon from '../components/svg/ProjectIcon'
+
+import ServiceCard from '../components/ServiceCard'
+import Testimonials from '../components/sections/Testimonials'
+
+import LastProjects from '../components/sections/LastProjects'
+import ContactMe from '../components/sections/ContactMe'
+import SoftSkills from '../components/sections/SoftSkills'
+
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Index');
+
   return (
     <>
     <main className="home-container">
@@ -38,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="main">
-          <p className="text-sm text-gray2 text-center">Hello , I'm</p>
+          <p className="text-sm text-gray2 text-center">{t('title')}</p>
           <h1 className="name text-sm font-semibold text-center"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
           <p className="text-lg text-gray2 text-center">Software Developer, Business Administrator & Data Analytics</p>
         </div>

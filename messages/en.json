@@ -1,0 +1,17 @@
+{
+  "Index": {
+    "title": "Hello , I'm",
+    "projects":"Projects",
+    "who_am_i":"Who am I?",
+    "services":"Services",
+    "about_me":"About me",
+    "contact":"Contact",
+    "soft_skills":"Soft Skills",
+    "last_projects":"Last Projects",
+    "testimonials":"Testimonials",
+    "contact_me":"Contact me"
+  },
+  "Contact": {
+    "title": "Contact"
+  }
+}

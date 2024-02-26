@@ -9,7 +9,7 @@ import HTMLIcon from '../svg/HTMLIcon'
 const SoftSkills = () => {
     return (
         <div className="skills">
-            <h1 className="subtitle">Soft Skills</h1>
+            <h1 className="subtitle">Habilidades</h1>
             <div className="skills-list">
                 <div className="skills-card">
                     <h3 className="text-lg text-orangeNormal text-center mb-3">Web Developer</h3>

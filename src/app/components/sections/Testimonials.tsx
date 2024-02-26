@@ -8,24 +8,6 @@ import { Blurhash, BlurhashCanvas } from 'react-blurhash';
 const data = [
   {
     id: 1,
-    avatar: 'https://i.pravatar.cc/300',
-    name: 'Tian Snow',
-    review: 'lorem aihf wie ewiofndv wlgnw brlwkn krlg nf vbñ',
-  },
-  {
-    id: 2,
-    avatar: 'https://i.pravatar.cc/300',
-    name: 'Charls Spire',
-    review: 'lorem aihf wie ewiofndv wlgnw brlwkn krlg nf vbñ',
-  },
-  {
-    id: 3,
-    avatar: 'https://i.pravatar.cc/300',
-    name: 'Tian Snow',
-    review: 'lorem aihf wie ewiofndv wlgnw brlwkn krlg nf vbñ',
-  },
-  {
-    id: 4,
     avatar: 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1700325442/web-persol/el-doc-1_tznn7m.jpg',
     name: 'Luis Valdivia Humareda',
     review: 'I am currently collaborating with Benjamin on several projects and can attest to his exceptional skills in frontend development, specifically with Sass and JavaScript. He possesses a genuine passion for creating intricate effects and animations in his code. Additionally, he has a strong commitment to personal and professional growth, constantly seeking new ways to improve his skills and knowledge. Currently, he is expanding his expertise by learning cloud services, with the goal of applying them in his daily assignments',
