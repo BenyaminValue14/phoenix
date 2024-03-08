@@ -1,5 +1,6 @@
 'use client'
 import React, {useState} from 'react';
+import LocaleSwitcher from './LocaleSwitcher';
 
 const Header = () => {
 
@@ -29,6 +30,7 @@ const Header = () => {
                 </ul>
                 <button type='button' id="menu-button" onClick={handleActive} className="menu-button"></button>
                 {/*<a href="#" className="button tiny">Comprar</a>*/}
+                <LocaleSwitcher />
             </div>
         </nav>
     </div>

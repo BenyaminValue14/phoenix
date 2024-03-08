@@ -3,6 +3,15 @@
     "title": "Hello , I'm",
     "projects":"Projects",
     "who_am_i":"Who am I?",
+    "description_title":"Description",
+    "description":[
+      "I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.",
+      "My mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.",
+      "Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents (America and Europa), and achieving certification as an AWS Cloud Practitioner."
+    ],
+    "experience_title":"Experience",
+    "years":"Years",
+    "completed":"Completed",
     "services":"Services",
     "about_me":"About me",
     "contact":"Contact",
@@ -13,5 +22,16 @@
   },
   "Contact": {
     "title": "Contact"
+  },
+  "LocaleLayout": {
+    "title": "next-intl example"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, es {es Spanish} en {us English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "pathnames": "Pathnames"
   }
 }
