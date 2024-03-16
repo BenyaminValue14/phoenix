@@ -1,16 +1,43 @@
 {
   "Index": {
-    "title": "Hola, me llamo"
+    "title": "Hola, soy",
+    "subtitle": "desarrollador de software, Administrator de empresas y Analista de datos",
+    "projects":"Proyectos",
+    "who_am_i":"Quién soy?",
+    "description_title":"Descripcion",
+    "description":[
+      "Soy desarrollador de software certificado en AWS y administrador de empresas. Estoy especializado en programar el frontend de aplicaciones web y tener una visión general del comportamiento de los negocios de mis clientes.",
+      "Mi misión es conseguir la integración de la tecnología cloud en empresas de diversos sectores y diseñar una buena experiencia de usuario para sus clientes",
+      "Algunos de mis mayores éxitos incluyen el desarrollo del frontend de aplicaciones con impacto nacional, aplicaciones con alta disponibilidad en 2 continentes (América y Europa) y la consecución de la certificación como AWS Cloud Practitioner."
+    ],
+    "experience":"Experiencia",
+    "years":"Años",
+    "completed":"Completados",
+    "services":"Servicios",
+    "about_me":"Sobre mi",
+    "contact":"Contacto",
+    "soft_skills":"Soft Skills",
+    "last_projects":"Últimos Proyectos",
+    "testimonials":"Testimonios",
+    "contact_me":"Contactame"
+  },
+  "About": {
+    "title": "Sobre mi",
+    "description":"Soy desarrollador de software certificado en AWS y profesional en administrador de empresas. Especializado en el área frontend y en tener una visión del comportamiento de los negocios de mis clientes.\nMi misión es conseguir la integración de la tecnología cloud en empresas de diversos sectores y diseñar una buena experiencia de usuario para sus clientes.\nAlgunos de mis mayores éxitos incluyen el desarrollo del frontend de aplicaciones con impacto nacional, aplicaciones con alta disponibilidad en 2 continentes y la consecución de la certificación como AWS Cloud Practitioner.",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "years": "Años",
+    "completed": "Completados"
   },
   "LocaleLayout": {
-    "title": "next-intl example"
+    "title": "Benyaroot - Software Developer"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
+    "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Spanish} en {us English} other {Unknown}}"
   },
   "Navigation": {
-    "home": "Home",
+    "home": "Inicio",
     "pathnames": "Pathnames"
   }
 }

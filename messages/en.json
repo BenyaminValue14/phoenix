@@ -1,15 +1,11 @@
 {
   "Index": {
     "title": "Hello , I'm",
+    "subtitle": "Software Developer, Business Administrator & Data Analytics",
     "projects":"Projects",
     "who_am_i":"Who am I?",
     "description_title":"Description",
-    "description":[
-      "I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.",
-      "My mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.",
-      "Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents (America and Europa), and achieving certification as an AWS Cloud Practitioner."
-    ],
-    "experience_title":"Experience",
+    "experience":"Experience",
     "years":"Years",
     "completed":"Completed",
     "services":"Services",
@@ -19,6 +15,14 @@
     "last_projects":"Last Projects",
     "testimonials":"Testimonials",
     "contact_me":"Contact me"
+  },
+  "About": {
+    "title": "About me",
+    "description":"I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.\nMy mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.\nSome of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents (America and Europa), and achieving certification as an AWS Cloud Practitioner.",
+    "experience": "Experience",
+    "projects": "Projects",
+    "years": "Years",
+    "completed": "Completed"
   },
   "Contact": {
     "title": "Contact"
@@ -31,6 +35,9 @@
     "locale": "{locale, select, es {es Spanish} en {us English} other {Unknown}}"
   },
   "Navigation": {
+    "description": "Description",
+    "who_am_i": "Who am I?",
+    "blog": "Blog",
     "home": "Home",
     "pathnames": "Pathnames"
   }

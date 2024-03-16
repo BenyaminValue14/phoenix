@@ -2,9 +2,10 @@ import ContactForm from "../form/ContactForm";
 import EmailIcon from "../svg/EmailIcon";
 import GitHubIcon from "../svg/GithubIcon";
 import LinkedinIcon from "../svg/LinkedinIcon";
-import WhatsappIcon from "../svg/WhatsappIcon";
+//import WhatsappIcon from "../svg/WhatsappIcon";
 
 const ContactMe = () => {
+  
   return (
     <div className="contact">
     <h1 className="subtitle">Contactame</h1>
@@ -29,7 +30,7 @@ const ContactMe = () => {
           <a href="https://github.com/BenyaOps" rel="noreferrer" target="_blank" className="text-orangeNormal hover:text-orangeLight">View Github Profile</a>
         </article>
       </div>
-      <ContactForm/>
+      <ContactForm  />
     </div>
   </div>
   )

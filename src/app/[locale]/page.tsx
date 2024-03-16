@@ -14,7 +14,7 @@ import {useTranslations} from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('Index');
-
+  const a = useTranslations('About');
   return (
     <>
     <main className="home-container">
@@ -32,22 +32,24 @@ export default function Home() {
         <div className="main">
           <p className="text-sm text-gray2 text-center">{t('title')}</p>
           <h1 className="name text-sm font-semibold text-center"> <span className="clip font-poppins text-2xl">Benyaroot</span></h1>
-          <p className="text-lg text-gray2 text-center">Software Developer, Business Administrator & Data Analytics</p>
+          <p className="text-lg text-gray2 text-center">{t('subtitle')}</p>
         </div>
         <div className="directions">
-          <button className="button active">Proyectos✨</button>
-          <button className="button">¿Quién soy?</button>
-          <button className="button">Servicios</button>
+          <button className="button active">{t('projects')}✨</button>
+          <button className="button">{t('who_am_i')}</button>
+          <button className="button">{t('services')}</button>
         </div>
 
         <div className="about">
           <div className="about-info">
-            <h2 className="subtitle">Sobre mi</h2>
-            <p className="about-text">I am a software developer certified in AWS and a business administrator. I specialize in programming the frontend of web applications and having a general overview of the behavior of my clients’ businesses.</p>
-            <p className="about-text">My mission is to achieve the integration of cloud technology in companies from various sectors and design a good user experience for their clients.</p>
-            <p className="about-text">Some of my greatest successes include developing the frontend of applications with national impact, applications with high availability on 2 continents (America and Europa), and achieving certification as an AWS Cloud Practitioner.</p>
+            <h2 className="subtitle">{a('title')}</h2>
+            {
+              a('description').split('\n').map((text, index) => {
+                return <p key={`about-text-${index}`} className="about-text">{text}</p>
+              })
+            }
             <div className="about-cards">
-              <AboutCards content="3+ años" title="Experiencia">
+              <AboutCards content={"3+ años" + t('years')} title={t('experience')}>
                 <ExpIcon />
               </AboutCards>
               <AboutCards content="12+ completados" title="Proyectos">

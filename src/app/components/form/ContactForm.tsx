@@ -9,7 +9,11 @@ type InputsProps = {
   email: string;
   message: string;
 };
-const ContactForm = () => {
+type IProps = {
+  messages: any;
+  
+}
+const ContactForm = ({messages}:IProps) => {
 
   const [showModalSuccess, setShowModalSuccess] = useState(false);
   //validate form

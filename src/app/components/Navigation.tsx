@@ -1,9 +1,4 @@
 'use client'
-import { useTranslations } from 'next-intl';
-import pick from 'lodash/pick';
-import LocaleSwitcher from './LocaleSwitcher';
-import NavigationLink from './NavigationLink';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { useState } from 'react';
 
 export default function Navigation() {
