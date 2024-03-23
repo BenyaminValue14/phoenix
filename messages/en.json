@@ -24,11 +24,19 @@
     "years": "Years",
     "completed": "Completed"
   },
+  "Services": {
+    "title": "Services",
+    "description": "I offer a wide range of services to help you achieve your goals. I can help you with the development of your web application, the design of your business model, and the analysis of your data. I am also certified in AWS and can help you with the integration of cloud technology in your company.",
+    "web_development": "Web Development",
+    "business_model": "Business Model",
+    "data_analysis": "Data Analysis",
+    "cloud_technology": "Cloud Technology"
+  },
   "Contact": {
     "title": "Contact"
   },
   "LocaleLayout": {
-    "title": "next-intl example"
+    "title": "Benyaroot - Software Developer"
   },
   "LocaleSwitcher": {
     "label": "Change language",

@@ -5,11 +5,7 @@
     "projects":"Proyectos",
     "who_am_i":"Quién soy?",
     "description_title":"Descripcion",
-    "description":[
-      "Soy desarrollador de software certificado en AWS y administrador de empresas. Estoy especializado en programar el frontend de aplicaciones web y tener una visión general del comportamiento de los negocios de mis clientes.",
-      "Mi misión es conseguir la integración de la tecnología cloud en empresas de diversos sectores y diseñar una buena experiencia de usuario para sus clientes",
-      "Algunos de mis mayores éxitos incluyen el desarrollo del frontend de aplicaciones con impacto nacional, aplicaciones con alta disponibilidad en 2 continentes (América y Europa) y la consecución de la certificación como AWS Cloud Practitioner."
-    ],
+    "description":"Soy desarrollador de software certificado en AWS y administrador de empresas. Estoy especializado en programar el frontend de aplicaciones web y tener una visión general del comportamiento de los negocios de mis clientes.\nMi misión es conseguir la integración de la tecnología cloud en empresas de diversos sectores y diseñar una buena experiencia de usuario para sus clientes\nAlgunos de mis mayores éxitos incluyen el desarrollo del frontend de aplicaciones con impacto nacional, aplicaciones con alta disponibilidad en 2 continentes (América y Europa) y la consecución de la certificación como AWS Cloud Practitioner.",
     "experience":"Experiencia",
     "years":"Años",
     "completed":"Completados",
@@ -29,6 +25,17 @@
     "years": "Años",
     "completed": "Completados"
   },
+  "Services": {
+    "title": "Servicios",
+    "description": "Ofrezco servicios de desarrollo de software y administración de empresas. Estoy especializado en programar el frontend de aplicaciones web y tener una visión general del comportamiento de los negocios de mis clientes.\nMi misión es conseguir la integración de la tecnología cloud en empresas de diversos sectores y diseñar una buena experiencia de usuario para sus clientes.\nAlgunos de mis mayores éxitos incluyen el desarrollo del frontend de aplicaciones con impacto nacional, aplicaciones con alta disponibilidad en 2 continentes y la consecución de la certificación como AWS Cloud Practitioner.",
+    "software_development": "Desarrollo de software",
+    "business_administration": "Administración de empresas",
+    "cloud_integration": "Integración de la nube",
+    "user_experience": "Experiencia de usuario"
+  },
+  "Contact": {
+    "title": "Contactos"
+  },
   "LocaleLayout": {
     "title": "Benyaroot - Software Developer"
   },
@@ -37,6 +44,9 @@
     "locale": "{locale, select, es {es Spanish} en {us English} other {Unknown}}"
   },
   "Navigation": {
+    "description": "Descripcion",
+    "who_am_i": "Quien soy?",
+    "blog": "Blog",
     "home": "Inicio",
     "pathnames": "Pathnames"
   }

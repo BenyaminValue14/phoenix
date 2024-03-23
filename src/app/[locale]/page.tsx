@@ -52,7 +52,7 @@ export default function Home() {
               <AboutCards content={"3+ años" + t('years')} title={t('experience')}>
                 <ExpIcon />
               </AboutCards>
-              <AboutCards content="12+ completados" title="Proyectos">
+              <AboutCards content="12+ completados" title={a('projects')}>
                 <ProjectIcon />
               </AboutCards>
             </div>
