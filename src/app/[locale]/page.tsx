@@ -13,6 +13,7 @@ import SoftSkills from '../components/sections/SoftSkills'
 import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  
   const t = useTranslations('Index');
   const a = useTranslations('About');
   return (

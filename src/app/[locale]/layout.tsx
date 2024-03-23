@@ -13,9 +13,9 @@ type Props = {
   children: ReactNode;
   params: {locale: string};
 };
-
+const locales2 = ['es', 'en'];
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales2.map((locale) => ({locale}));
 }
 
 export async function generateMetadata({
