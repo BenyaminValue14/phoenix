@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import '@/src/globals.css'
 import {Inter} from 'next/font/google';
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {ReactNode} from 'react';

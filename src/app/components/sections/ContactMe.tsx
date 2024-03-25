@@ -30,7 +30,7 @@ const ContactMe = () => {
           <a href="https://github.com/BenyaOps" rel="noreferrer" target="_blank" className="text-orangeNormal hover:text-orangeLight">View Github Profile</a>
         </article>
       </div>
-      <ContactForm  />
+      <ContactForm messages={''} />
     </div>
   </div>
   )
